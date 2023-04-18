@@ -6,22 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listagem de nomes</title>
     <link rel="stylesheet" href="style.css">
+    <script async type="module" src="./script/submit_data.js"></script>
+    <script async type="module" src="./script/getData.js"></script>
 </head>
 <body>
     <main class="main-content">
         <form action="submit" method="post" class="form">
             <label for="input" class="label">Digite o nome: 
-                <input type="text" class="input">
+                <input type="text" class="input" id="input-name">
             </label>
-            <button type="submit" class="submit-button">✔</button>
+            <button type="submit" class="submit-button" id="submit-btn">✔</button>
         </form>
-        <div class="submit-names">
-            <p class="names">
-                Nome Teste Da Silva
-            </p>
-            <p class="names">
-                Ciclano Pereira
-            </p>
+        <div class="submit-names" id="submitNames">
+            <!-- Gerado por Javascript -->
         </div>
     </main>
 </body>
