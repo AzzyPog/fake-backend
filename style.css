@@ -6,23 +6,27 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
-.main-content {
+body {
+    background: #c031af;
+    background: linear-gradient(321deg, #b43aa6 0%, #fd1dab 50%, #fccd45 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+}
+.main-content {
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #b43aa6;
-    background: linear-gradient(321deg, #b43aa6 0%, #fd1dab 50%, #fccd45 100%);
-
 }
 
 .form {
     display: flex;
     align-items: center;
     height: 100px;
+    margin-top: 20%;
 }
 
 .label {
@@ -69,6 +73,7 @@
 .submit-names {
     text-align: center;
 }
+
 
 
 
