@@ -68,6 +68,12 @@ body {
 .names {
     font-weight: 500;
     color: #fff;
+    transition-duration: 0.3s;
+}
+
+.names:hover{
+    cursor: pointer;
+    color: #b40101b6;
 }
 
 .submit-names {

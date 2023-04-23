@@ -22,4 +22,15 @@ async function getNames() {
     return response.json()
 }
 
-export {getNames, postName};
+
+async function deleteName(id) {
+    const response = await fetch(`http://localhost:3000/names/${id}`, {
+        method: "DELETE",
+        headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json"
+    }    
+    })
+    return response.json()
+}
+export {getNames, postName, deleteName};
